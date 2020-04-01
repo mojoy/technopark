@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html class="pb" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>texnopark main</title>
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#f8fbfc">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#239ca3">
+	<!-- favicons -->
+	<!-- og -->
+	<meta property="og:title" content="texnopark">
+	<meta property="og:description" content="texnopark">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/img/og.jpg">
+	<!-- og -->
+	<link href="css/fancybox3.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<!-- write your code here -->
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+	<script src="js/chinese-port.js"></script>
+	<script src="js/port_georg.js"></script>
+	<script src="js/tr.js"></script>
+	<script src="js/4slide.js"></script>
+	<script src="js/storage.js"></script>
+	<script src="js/track.js"></script>
+	<script src="js/national-courier.js"></script>
+	<script src="js/stages.js"></script>
+	<script src="js/investments.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/bank.js"></script>
+	<script src="js/city.js"></script>
+	<script src="js/man-b2b.js"></script>
+
+	<script src="js/main.js"></script>
+	<!-- write your code here -->
+<body  onload="init();">
+<img src="Авторизация.jpg" class="bg">
+	<div class="wrapper">
+		<header class="header container container-full">
+			<div class="container-holder">
+				<div class="header-inner">
+					<div class="container-holder">
+						<div class="header-top">
+							<div class="container-holder">
+								<form action="" class="form-search mob">
+									<fieldset>
+										<label for="search1">ПОИСК</label>
+										<div class="input-holder">
+											<input id="search1" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+										</div>
+										<input type="submit" value="поиск" placeholder="">
+									</fieldset>
+								</form>
+								<div class="header-row">
+									<div class="logo pc"><a href="#"></a></div>
+									<div class="header-row-info">
+										<div class="header-row-info-col js-header-row-info-col">
+											<div class="header-row-info-lng">
+												<span class="lng lng-active">RU</span>
+												<span>ВЫБРАТЬ&nbsp;ЯЗЫК</span>
+											</div>
+											<ul class="drop-menu">
+												<li><a href="#" title="VK">VK</a></li>
+												<li class="active"><a href="#" title="IN">IN</a></li>
+												<li><a href="#" title="FB">FB</a></li>
+											</ul>
+										</div>
+										<div class="header-row-info-col header-col-tel">
+											<div class="header-row-info-tel">
+												<a class="phone" href="tel:+78005555550">8 800 555 55 50</a>
+												<span>НАШИ&nbsp;КОНТАКТЫ</span>
+											</div>
+										</div>
+										<div class="header-row-info-col header-col-login">
+											<a href="#modal-login" class="button button-small btn-login fancy-modal"><i class="i"></i>ВОЙТИ</a>
+										</div>
+									</div>
+									<form action="" class="form-search pc">
+										<fieldset>
+											<label for="search">ПОИСК</label>
+											<div class="input-holder">
+												<input id="search" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+											</div>
+											<input type="submit" value="поиск" placeholder="">
+										</fieldset>
+									</form>
+								</div>
+								<div class="header-row header-row-add">
+									<div class="logo mob"><a href="#"></a></div>
+									<div class="media js-media">
+										<span>МЫ В MEDIA</span>
+										<ul class="drop-menu">
+											<li><a href="#" title="VK">VK</a></li>
+											<li class="active"><a href="#" title="IN">IN</a></li>
+											<li><a href="#" title="FB">FB</a></li>
+										</ul>
+									</div>
+									<nav class="nav-main">
+										<ul>
+											<li class="active"><a href="">О технопарке</a></li>
+											<li><a href="">Резидентам</a></li>
+											<li><a href="">Нерезидентам</a></li>
+											<li><a href="">CLASSO</a></li>
+											<li><a href="">Сервисы</a></li>
+											<li><a href="">ЭКО Город</a></li>
+											<li><a href="">B2B Бизнес</a></li>
+											<li><a href="">Программы</a></li>
+											<li><a href="">Партнерам</a></li>
+											<li><a href="">Работа</a></li>
+											<li><a href="">События</a></li>
+											<li><a href="">Контакты</a></li>
+										</ul>
+									</nav>
+									<div class="box-menu">
+										<a href="#" class="button button-small box-menu__btn"><i class="i"></i>МЕНЮ</a>
+									</div>
+								</div>
+							</div>
+							<div class="menu-pop-up">
+								<strong class="menu-pop-up__title">МЕНЮ</strong>
+								<div class="container container-menu">
+									<div class="row">
+										<div class="col-2-5">
+											<strong class="container-menu__title">О ТЕХНОПАРКЕ</strong>
+											<ul class="container-menu__list">
+												<li><a href="#">Концепция</a></li>
+												<li><a href="#">Уникальность</a></li>
+												<li><a href="#">CLASSO</a></li>
+												<li><a href="#">ЦОП</a></li>
+												<li><a href="#">Участок под строительство</a></li>
+												<li><a href="#">Технические условия</a></li>
+												<li><a href="#">Инфраструктура</a></li>
+												<li><a href="#">Генплан</a></li>
+												<li><a href="#">Ход строительства</a></li>
+												<li><a href="#">Управляющая Компания</a></li>
+												<li><a href="#">ЭКО-город</a></li>
+												<li><a href="#">Технопарки- партнеры</a></li>
+												<li><a href="#">Программа NGR</a></li>
+											</ul>
+										</div>
+										<div class="col-2-5">
+											<strong class="container-menu__title">Резидентам</strong>
+											<ul class="container-menu__list">
+												<li><a href="">Резидент Технопарка</a></li>
+												<li><a href="">Резидент CLASSO</a></li>
+												<li><a href="">Стать Резидентом</a></li>
+												<li><a href="">Конкурсная комиссия</a></li>
+												<li><a href="">Статус Резидента</a></li>
+												<li><a href="">Услуги </a>
+													<ul class="container-menu__sub-list">
+														<li><a href="">Консультационные</a></li>
+														<li><a href="">Консалтинговые</a></li>
+														<li><a href="">Складские</a></li>
+														<li><a href="">Финансовые</a></li>
+														<li><a href="">Страховые</a></li>
+														<li><a href="">Таможенные</a></li>
+													</ul>
+												</li>
+												<li><a href="">Стать резидентом</a></li>
+												<li><a href="">Соглашение</a></li>
+											</ul>
+										</div>
+										<div class="col-2-5">
+											<strong class="container-menu__title">Нерезидентам</strong>
+											<ul class="container-menu__list">
+												<li><a href="">Услуги</a>
+													<ul class="container-menu__sub-list">
+														<li><a href="">Консультационные</a></li>
+														<li><a href="">Консалтинговые</a></li>
+														<li><a href="">Складские</a></li>
+														<li><a href="">Финансовые</a></li>
+														<li><a href="">Страховые</a></li>
+														<li><a href="">Таможенные</a></li>
+													</ul>
+												</li>
+												<li><a href="">Соглашение</a></li>
+												<li><a href="">Договор</a></li>
+											</ul>
+										</div>
+										<div class="col-2-5">
+											<strong class="container-menu__title">Classo</strong>
+											<ul class="container-menu__list">
+												<li><a href="">Внешняя логистика</a></li>
+												<li><a href="">Склад Грузия</a></li>
+												<li><a href="">Склад Болгария</a></li>
+												<li><a href="">Услуги</a></li>
+												<li><a href="">Заявка на услуги</a></li>
+												<li><a href="">Договора и соглашения</a></li>
+												<li><a href="">Программа CLASSO</a></li>
+												<li><a href="">Подключение к CLASSO</a></li>
+											</ul>
+										</div>
+										<div class="col-2-5">
+											<strong class="container-menu__title">Сервисы Future</strong>
+											<ul class="container-menu__list">
+												<li><a href="">«E-20PAY»</a></li>
+												<li><a href="">Народный курьер</a></li>
+												<li><a href="">Народный магазин</a></li>
+												<li><a href="">Народный размер</a></li>
+											</ul>
+											<strong class="container-menu__title">Эко город</strong>
+											<ul class="container-menu__list">
+												<li><a href="">Отель</a></li>
+												<li><a href="">Офисы</a></li>
+												<li><a href="">Конференц-зал</a></li>
+												<li><a href="">Рестораны</a></li>
+												<li><a href="">Трансфер</a></li>
+												<li><a href="">Услуги</a></li>
+												<li><a href="">Заявка</a></li>
+												<li><a href="">Соглашение</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<span class="btn-close-menu">СВЕРНУТЬ МЕНЮ</span>
+							</div>
+						</div>
+						<section class="container">
+							<div class="container-holder">
+								<div class="promo">
+									<h1>Да здравствует новая логистика!</h1>
+									<p>Бесплатные интернет- склады CLASSO с набором уникальных сервисов в Грузии и Болгарии</p>
+									<p>Инновационные склады CLASSO не только снижают издержки ритейлеров, сокращают время доставки посылки, но и в корне меняЮт всю схему логистического сервиса: доход складов CLASSO формируется не только на привычных услугах, но и на дополнительных инновационных сервисах.
+										Основной центр дохода складов CLASSO - 0,5% с транзакций в интернет-покупках с участием новой платежной системы прямых платежей E-20PAY.</p>
+									<div class="btn-row">
+										<a href="#" class="button" title="Подробнее">Подробнее</a>
+										<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="container-convas">
+					<img src="images/test-photo/bg-header.jpg" alt="" class="header-images">
+					<!-- chinese-port
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1600px; height:955px">
+						<canvas id="canvas" width="1600" height="955" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:955px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</header>
+
+		<!-- sea-port -->
+
+		<section class="container container-full container-sea-port">
+			<div class="container-holder">
+				<div class="container container-sea-port-container">
+					<div class="row">
+						<div class="col-6">
+
+						</div>
+						<div class="col-6">
+							<h2 class="container__title">Склады CLASSO –  это еще и 50% компенсации морского тарифа для интернет-ритейлеров!</h2>
+							<div class="text-box">
+								<p>Склады CLASSO превратили логистику в набор стандартных и уникальных сервисов для интернет-ритейлеров: «Народный курьер», «Народный магазин», « Народный размер». </p>
+								<p>Предлагая интернет- ритейлерам склады CLASSO ( в том числе- перевалку, обработку, сборку, страхование, отправку грузов и посылок), -мы «привязываем» наших клиентов к платежному сервису E-20PAY, как возможному (но не единственному) варианту оплаты покупок, - с меньшими рисками и меньшей комиссией в 6 раз!</p>
+							</div>
+							<div class="btn-row">
+								<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+								<a href="#" class="button button-blue-dark" title="Отсавить заявку">Отсавить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-sea-port-bg">
+					<img src="images/test-photo/img-3.png" alt="">
+
+					<!-- порт
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1250px; height:760px">
+						<canvas id="canvas" width="1250" height="760" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1250px; height:760px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</section>
+
+		<!-- air-port -->
+
+		<section class="container container-full container-air-port">
+			<div class="container-holder">
+				<div class="container container-air-port-container">
+					<div class="row">
+						<div class="col-6"></div>
+						<div class="col-6">
+							<h2 class="container__title">Стандартные и инновационные сервисы и услуги складов CLASSO в Грузии и Болгарии</h2>
+							<div class="text-box">
+								<p>Интернет-склады CLASSO могут сортировать более 1 000 000 посылок в сутки. Софт склада управляется одним человеком: видеоанализатор распознаёт объекты (упавшие посылки с конвейера, сотрудников, зашедших вне разрешённой зоны), на всех этапах сортировочного конвейера отдаются сигналы в диспетчерскую систему,  дальше отрабатываются соответствующие электронные протоколы.</p>
+								<p>Инновационное программное обеспечение на складах создает синхронизацию учета поставщиков и внутреннего аудита, оптимизацию площадей и упаковки комбинированных отправлений, учет и распределение персонала, планирование пиковых нагрузок, интеграцию с внешними платежными карточными и банковскими системами (в том числе, и системой прямых платежей - E-20PAY).</p>
+							</div>
+							<div class="btn-row">
+								<a href="#" class="button button-blue" title="Стандартные сервисы">Стандартные сервисы</a>
+								<a href="#" class="button button-blue-dark" title="Иновационные сервисы">Иновационные сервисы</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-air-port-bg">
+					<img src="images/test-photo/container-air-port-bg.jpg" alt="">
+					<!-- tr
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1281px; height:731px">
+						<canvas id="canvas" width="1281" height="731" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1281px; height:731px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- E-20PAY -->
+
+		<section class="container container-full container-e20pay">
+			<div class="container-holder">
+				<div class="container__heading container__heading-center">
+					<h2 class="container__title">Все меняет платежная система E-20PAY!</h2>
+					<p>Инновации в привычной логистике и системе расчетов</p>
+				</div>
+				<div class="container">
+					<div class="container-holder">
+						<div class="row">
+							<div class="col-6">
+
+								<div class="text-box text-box-dark">
+									<p>Удобный платежный сервис E-20PAY - это прямые платежи (банк –банк) с самой минимальной комиссией в мире- всего 0,5%!</p>
+									<p>Внедрение нового платежного сервиса E-20PAY может существенно повлиять на многие сегменты экономики, где есть огромное количество транзакций. Именно комиссия с онлайн-продаж и стала отправной точкой построения концепта логистического проекта CLASSО в Грузии и Болгарии, смещающего центр дохода склада с обычных складских услуг на доход с транзакций.</p>
+								</div>
+								<div class="btn-row">
+									<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+									<a href="#" class="button button-blue-dark" title="Зарегистрироваться">Зарегистрироваться</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-convas">
+					<img src="images/test-photo/img-pay.jpg" alt="">
+					<!-- e20pay
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1600px; height:1200px">
+						<canvas id="canvas" width="1600" height="1200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:1200px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</section>
+
+		<!--  CLASSO -->
+		<section class="container container-full warehouses-classo">
+			<div class="container-holder">
+				<div class="warehouses-classo__text">
+					<h2 class="container__title">Склады CLASSO- это сервисы, не имеющие аналогов!</h2>
+				</div>
+				<div class="container-convas">
+					<img src="images/test-photo/img-sklad.jpg" alt="">
+
+					<!-- storage
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1600px; height:940px">
+						<canvas id="canvas" width="1600" height="940" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:940px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+
+				</div>
+			</div>
+		</section>
+		<!--//  CLASSO -->
+
+		<section class="container container-box container-truck">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/img-truck.jpg" alt="">
+
+							<!-- track
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:660px; height:460px">
+								<canvas id="canvas" width="660" height="460" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:660px; height:460px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+							-->
+
+						</div>
+					</div>
+					<div class="col-6 col-text">
+						<div class="text-box">
+							<p>Бесплатные склады для интернет-ритейлеров CLASSO превратили логистику в набор не только уже имеющихся на рынке операций, но и внедрили в свою деятельность новые авторские сервисы, не имеющие аналогов:</p>
+							<ul>
+								<li>«Народный магазин»- склад продаж, а также полное логистическое и финансовое обеспечение онлайн продавцов с единым учетом складских запасов при одновременной продаже через различные фронт-энды;</li>
+								<li>«Народный курьер»-доставка последней мили по принципу такси Uber;</li>
+								<li>«Народный размер»- определение размера (снижение возвратов).</li>
+							</ul>
+							<p>Это означает, что для стран- участников проекта CLASSO открывается шанс стать крупнейшими евразийскими и европейскими логистическими хабами, развивать собственную логистическую инфраструктуру и создавать новые бизнес- цепочки.</p>
+						</div>
+						<div class="btn-row">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container container-box container-courier">
+			<div class="container-holder">
+				<div class="row">
+
+					<div class="col-6 col-text">
+						<div class="text-box">
+							<h2>Уникальный сервис доставки последней мили - «Народный курьер»</h2>
+							<h3>Сокращение сроков доставки посылки в несколько раз!</h3>
+							<p>Главная проблема онлайн -торговли – это сроки доставки, которые негативно влияют на выбор покупателем места покупки товара. В онлайн магазине нет возможности посмотреть качество и размер товара, что само по себе негативно сказывается на предпочтении покупателя, а когда доставка может длиться несколько дней или недель это заставляет делать покупателей выбор в пользу классического ритейла, не смотря, зачастую, на более высокие цены.</p>
+							<p>Распределительная система курьерской доставки «Народный курьер» позволяет любому желающему выполнить роль курьера и зарабатывать на этом. Сервис организован по принципу работы такси UBER или служб доставки еды.</p>
+						</div>
+						<div class="btn-row">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+						</div>
+					</div>
+
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/img-courier.jpg" alt="">
+
+							<!-- national-courier
+
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:800px; height:500px">
+								<canvas id="canvas" width="800" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+							-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- people-courier -->
+
+		<section class="container container-three-col people-courier">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-12 container-convas container-convas-web">
+						<img src="images/test-photo/img-people-courier.jpg" alt="">
+
+						<!-- stages
+						<div id="animation_container" style="background-color:rgba(0, 0, 0, 0.00); width:1600px; height:500px">
+							<canvas id="canvas" width="1600" height="500" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+							<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+							</div>
+						</div>
+						-->
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/img-people-courier-1.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Шаг первый</h3>
+							<div class="container-bank__text">
+								<p>Если Вы хотите получать дополнительный доход, -Вы можете подключиться к сервису «Народный курьер», зарегистрировавшись в нем.</p>
+								<p>В считанные минуты система проверит Ваши паспортные данные, идентифицирует Вас, подключит к страховому брокеру. С этого момента Вы сможете реагировать на различные заявки доставки посылок и получать доход за услугу.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/img-people-courier-2.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Шаг первый</h3>
+							<div class="container-bank__text">
+								<p>Курьер доставляет посылку любым, удобным ему способом. Заказчик получает посылку и подтверждает ее доставку в сервисе. С этого момента с курьера снимается юридическая ответственность. Получив вознаграждение, курьер подтверждает оплату также в приложении. С этого момента с заказчика снимается финансовая ответственность за оплату доставки.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/img-people-courier-3.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Шаг третий</h3>
+							<div class="container-bank__text">
+								<p>Любой сможет получать дополнительный доход на простой курьерской доставке посылок, при этом, сервис не берет комиссию, защищает интересы курьера и получателя заказа. Сервис «Народный курьер»- отличный способ заработка для студентов, пенсионеров и любого другого, кому срочно понадобились деньги.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--// people-courier -->
+
+		<div class="container container-full n-courier">
+			<div class="container-holder">
+				<div class="container__heading container__heading-center">
+					<h2 class="container__title">«Народный курьер» - доставка «день в день» стала возможной!</h2>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 container-n-courier-wrapper">
+							<div class="container container-n-courier">
+								<div class="row">
+									<div class="col-4">
+										<strong class="n-courier__title">Для покупателей:</strong>
+										<div class="n-courier__list">
+											<div class="n-courier__item">
+												<div class="n-courier__item-inner">
+													<span class="n-courier__letter">a</span>
+													<strong class="n-courier__title">Скорость доставки</strong>
+													Курьер может пользоваться различными видами транспорта: от велосипеда до мотоцикла.
+												</div>
+											</div>
+											<div class="n-courier__item">
+												<div class="n-courier__item-inner">
+													<span class="n-courier__letter">b</span>
+													<strong class="n-courier__title">Удобство</strong>
+													Можно общаться с клиентом напрямую и договариваться об альтернативном месте и времени встречи.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-8">
+										<strong class="n-courier__title">Для продавца:</strong>
+										<div class="n-courier__list">
+											<div class="n-courier__item">
+												<div class="n-courier__item-inner">
+													<span class="n-courier__letter">a</span>
+													<strong class="n-courier__title">Низкая ставка оплаты</strong>
+													За счет огромной конкуренции теперь можно будет делать доставку тем курьером, который предложит минимальную цену за услугу доставки.
+												</div>
+											</div>
+											<div class="n-courier__item">
+												<div class="n-courier__item-inner">
+													<span class="n-courier__letter">b</span>
+													<strong class="n-courier__title">Гибкость</strong>
+													За счет огромной конкуренции теперь можно будет делать доставку тем курьером, который предложит минимальную цену за услугу доставки.
+												</div>
+											</div>
+											<div class="n-courier__item n-courier__item-full">
+												<div class="n-courier__item-inner">
+													<span class="n-courier__letter">c</span>
+													<strong class="n-courier__title">Повышенный интерес</strong>
+													Повышение покупательского интереса за счет более дешевой и гибкой доставки товара покупателю.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container-convas">
+							<img src="images/test-photo/img-n-courier.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- texnoparkeco  -->
+
+		<section class="container container-full container-texnoparkeco">
+			<div class="container-holder">
+				<div class="container__heading container__heading-center">
+					<h2 class="container__title">Технопарк ЭКО Стандарт - GE</h2>
+					<p>Город уникальных возможностей для бизнеса!</p>
+				</div>
+				<div class="container-convas">
+					<img src="images/test-photo/texnopark-eco.jpg" alt="">
+				</div>
+				<div class="container-texnoparkeco-inner">
+					<div class="container-texnoparkeco-inner2">
+						<div class="container">
+							<div class="row">
+								<div class="col-6">
+									<h3>О проекте</h3>
+									<p>Технопарк ЭКО Стандарт -GE помогает бизнесу (вне зависимости от страны происхождения капитала) в реализации инвестиционных проектов на территории Свободной Индустриальной Зоны Грузии. </p>
+									<p>В Технопарке действует льготное налогообложение (0 налогов!). Резидентам Технопарка предоставляется льготное проектное  финансирование ( 5-7 %), услуги лизинга, управление строительством, проектирование, участие в Международных форумах и т.д. </p>
+								</div>
+								<div class="col-6">
+									<h3>Технопарк ЭКО Стандарт-GE - инновации в концепции, сервисах, услугах и логистике</h3>
+									<p>Начало реализации проекта Технопарк ЭКО Стандарт-GE планируется уже в конце 2020 года, в непосредственной близости от международного аэропорта, железнодорожных путей транснационального «Нового Великого Шелкового пути», соединяющего Азию и Европу. </p>
+									<p>На территории Технопарка планируется разместить производственные, офисные, гостиничные зоны, торговые, финансовые и научно-исследовательский центры, интернет-склады CLASSO. В проекте выделено 50 га для инвестиционных проектов Резидентов,- фактически, -это инновационный, современный техно-город с акцентом на высокотехнологичные и конкурентоспособные  производства с высоким экспортным потенциалом.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<h3>Технопарк ЭКО Стандарт -GE предложит Резидентам следующие услуги: </h3>
+								</div>
+								<div class="col-6"></div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<ul>
+										<li>Проектное и венчурное финансирование с процентной ставкой  5-7%;</li>
+										<li>Услуги лизинга с процентной ставкой 5-7%;</li>
+										<li>Проектирование, строительный надзор, поставку оборудования;</li>
+										<li>Стандартные и инновационные онлайн-сервисы;</li>
+										<li>Использование платежного сервиса E-20PAY;</li>
+										<li>50% компенсации морского тарифа для интернет-ритейлеров в складах CLASSO;</li>
+										<li>Бесплатное хранение переходящего остатка для интернет-ритейлеров на складах CLASSO;</li>
+										<li>Полное логистическое и финансовое обеспечение онлайн продавцов с единым учетом складских запасов при одновременной продаже через различные фронт-энды;</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul>
+										<li>Логистическое обеспечение онлайн продавцов;</li>
+										<li>Прием платежей и авторизацию покупок;</li>
+										<li>Трекинг поставок и оплат на всех этапах, возврат и замену товара;</li>
+										<li>Синхронизацию учета поставщиков и внутреннего учета;</li>
+										<li>Интеграцию с внешними платежными карточными и банковскими системами;</li>
+										<li>Управление средствами автоматизации складской обработки товаров;</li>
+										<li>Панель управления для поставщиков;</li>
+										<li>API для онлайн фронт-эндов и многое другое.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="btn-row btn-row-center">
+								<a href="#" class="button button-white" title="ПОДАТЬ ЗАЯВКУ">ПОДАТЬ ЗАЯВКУ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--// texnoparkeco -->
+		<!-- bank1 -->
+
+		<section class="container container-three-col container-bank container-bank1">
+			<div class="container-holder">
+				<div class="container__heading container__heading-center">
+					<h2 class="container__title">Инвестиции для бизнеса</h2>
+					<p>Бизнесу есть, что предложить уже сегодня! </p>
+				</div>
+				<div class="container-convas container-convas-web">
+					<img src="images/test-photo/bank1.jpg" alt="">
+
+					<!-- investments
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1450px; height:720px">
+						<canvas id="canvas" width="1450" height="720" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1450px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/bank1-1.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Инвестировать просто!</h3>
+							<div class="container-bank__text">
+								<p>Вы ищите инвестиции, чтобы реализовать Ваш проект? Это возможно уже сегодня! Вы можете подбирать варианты собственной реализации, получения финансирования, можете ознакомиться с предложениями соинвестирования через сервис www.ngr.ge</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/bank1-2.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Создайте собственный бизнес!</h3>
+							<div class="container-bank__text">
+								<p>Подключение к платформе СLASSO позволяют любому человеку, в любой точке мира, продавать товары мировых интернет- ритейлеров под своим брендом. Имея явное ценовое преимущество и комплекс инновационных сервисов, Вы сможете выходить на новые рынки и формировать свой бренд с набором от разных поставщиков. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="container-convas__images">
+							<img src="images/test-photo/bank1-3.jpg" alt="">
+						</div>
+						<div class="container-bank-bottom">
+							<h3 class="container-bank__title">Мировые инвестиции</h3>
+							<div class="container-bank__text">
+								<p>Обладая талантом, имея всего лишь идею или стартап, каждый из Вас сможет стать партнером или участником инновационных проектов цифровой экономики или частно- государственного партнерства на условиях: продажа проекта, сопартнерство, получение дохода от  своих проектов.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- bank2 -->
+
+		<section class="container container-box container-bank2">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/bank2.jpg" alt="">
+
+							<!-- list
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:560px; height:560px">
+								<canvas id="canvas" width="560" height="560" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:560px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+							-->
+
+						</div>
+					</div>
+					<div class="col-6 col-text">
+						<div class="text-box">
+							<h2>Технопарк ЭКО Стандарт-GE- европейский подход получения финансирования</h2>
+							<h3>О реальности получения финансирования</h3>
+							<p>Обычно предприниматели уже имеют опыт получения финансирования. И чаще, опыт- негативный и нулевой. Именно поэтому, в Технопарке ЭКО Стандарт-GE мы не ставим задачу: пропускать Заявителя через очередной «круг ада». Наличие проекта, финансовая модель и 10% необходимого финансирования на счете в любом банке Грузии,- являются основанием для предоставления и покрытия остальных 90% стоимости проекта.</p>
+						</div>
+						<div class="btn-row">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- bank3 -->
+
+		<section class="container container-box container-bank3">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-6 col-text">
+						<div class="text-box">
+							<h2>Резидент Технопарка получает уникальные возможности и преференции</h2>
+							<p>Мы отсматриваем бизнес-обращения, расширяя список участников за счет новых претендентов на получение статуса Резидента Технопарка ЭКО Стандарт-GE- территории нулевых налогов и уникальных возможностей.</p>
+						</div>
+						<div class="btn-row">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+						</div>
+					</div>
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/bank3.jpg" alt="">
+
+							<!-- bank
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:750px; height:670px">
+								<canvas id="canvas" width="750" height="670" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:750px; height:670px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+							-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- bank4 -->
+
+		<section class="container container-full container-inner-center container-bank4">
+			<div class="container-holder">
+				<div class="container-convas">
+					<img src="images/test-photo/bank4.jpg" alt="">
+
+					<!-- city
+					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1500px; height:1000px">
+						<canvas id="canvas" width="1500" height="1000" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1500px; height:1000px; position: absolute; left: 0px; top: 0px; display: block;">
+						</div>
+					</div>
+					-->
+
+				</div>
+				<div class="container">
+					<div class="container-content">
+						<h2 class="container__title">Построй свое будущее сегодня!</h2>
+						<p>На территории Технопарка ЭКО Стандарт -GE возможны расчеты в крипто- валюте, в проекте предусмотрены зоны Dute free, зоны высоких технологий, а так же территория социализации и комфорта обеспечения наилучших условий ведения бизнеса и проживания команд проектов- ЭКО- город. </p>
+						<p>На территории Технопарка планируется разместить производственные и офисные и гостиничные зоны, торговые, финансовые и научно-исследовательский центры и логистика- интернет-склады CLASSO. Фактически, -это инновационный, современный техно-город с акцентом на высокотехнологичные и конкурентоспособные  производства с высоким экспортным потенциалом.</p>
+						<div class="btn-row btn-row-center">
+							<a href="#" class="button button-blue" title="Открыть бизнес">Открыть бизнес</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Innovative inet catalog -->
+
+		<section class="container container-box container-partner">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/img4.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-6 col-text">
+						<div class="text-box text-box-dark">
+							<h2>Стратегическим партнером Технопарка ЭКО Стандарт-GE является Китай и китайские производители</h2>
+							<p>Технопарк ЭКО Стандарт-GE активно сотрудничает с производителями товаров и услуг из КНР. Такое сотрудничество осуществляется и в вопросах развития информационных услуг для сектора высоких технологий, реализации совместных проектов, направленных на улучшение информационных услуг для инновационных предприятий.</p>
+							<p>Главная цель сотрудничества— распространение китайского и мирового опыта в области создания новых бизнес- форматов, управления, а также привлечение иностранных партнеров к сотрудничеству с Резидентами Технопарка, а также решение вопросов государственного регулирования и поддержки стартапов, решение финансово-экономических вопросов, создание целостных эко-систем поддержки молодых компаний и работа с талантливыми людьми по всему миру.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Innovative inet catalog -->
+
+		<section class="container container-box container-inno">
+			<div class="container-holder">
+				<div class="row">
+					<div class="col-6 col-text">
+						<div class="text-box">
+							<h2>Инновационный интернет-каталог для бизнеса В2В</h2>
+							<p>Более 1000 производителей промышленного оборудования, товаров, услуг. Перед Вами не просто перечень  предприятий из разных стран мира,- кроме общепринятых контактных данных: адреса, телефона, сайта - Вы сможете заказать бесплатный обратный звонок (аудио или видео) ведущих специалистов компаний каталога, онлайн конференцию с участием наших переводчиков, юристов, финансистов, маркетологов и иных экспертов,  а также написать сообщение, перевести его в режиме онлайн, составить коммерческое предложение или направить специальную форму презентации Вашего проекта.</p>
+						</div>
+						<div class="btn-row">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+						</div>
+					</div>
+					<div class="col-6 col-convas">
+						<div class="container-convas">
+							<img src="images/test-photo/img5.jpg" alt="" style=" display: none">
+
+							<!-- man b2b -->
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:880px; height:850px">
+								<canvas id="canvas" width="880" height="850" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:880px; height:850px; position: absolute; left: 0px; top: 0px; display: block;">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+
+		<footer class="footer container">
+			<div class="container-holder">
+			<div class=" footer-top">
+				<div class="container-holder">
+					<div class="col-footer-text">
+						<strong class="logo-footer"><a href="#" title="texnopark">texnopark</a></strong>
+						<div class="col-footer-text__text">
+							<p>Инновационый технологии для ващего бизнеса, логистики и партнеров. Технопарк - сервис информационных решений для вашего бизнеса - вы слегкостью можете создать,продать или предложить свой бизнес, а так же стать партнером и строить свой бизнес вместе снашей командой. </p>
+						</div>
+						<div class="social-box">
+							<strong class="social-box__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</strong>
+							<ul class="social-box__social">
+								<li><a href="#" title="instagram" class="instagram">instagram</a></li>
+								<li><a href="#" title="youtobe" class="youtobe">youtobe</a></li>
+								<li><a href="#" title="facebook" class="facebook">facebook</a></li>
+								<li><a href="#" title="twitter" class="twitter">twitter</a></li>
+								<li><a href="#" title="telegram" class="telegram">telegram</a></li>
+							</ul>
+						</div>
+						<div class="box-requisites-mob">
+							<strong class="footer__title">Реквизиты</strong>
+							Здксь будут размещены реквизиты компании.
+						</div>
+					</div>
+					<div class="col-footer-nav">
+						<div class="row row-footer-nav">
+							<div class="col-2 col-main-sections">
+								<strong class="footer__title">Основные разделы</strong>
+								<ul class="footer-nav-list">
+									<li><a href="#" title="">О технопарке</a></li>
+									<li><a href="#" title="">Резидентам</a></li>
+									<li><a href="#" title="">Нерезидентам</a></li>
+									<li><a href="#" title="">Classo</a></li>
+									<li><a href="#" title="">Программы</a></li>
+									<li><a href="#" title="">Работа</a></li>
+									<li><a href="#" title="">События</a></li>
+									<li><a href="#" title="">Контакты</a></li>
+									<li><a href="#" title="">Карта сайта</a></li>
+								</ul>
+							</div>
+							<div class="col-10 col-nav-sections">
+								<div class="row">
+									<div class="col-2 col-services">
+										<strong class="footer__title">Сервисы</strong>
+										<ul class="footer-nav-list">
+											<li><a href="" title="">B2B бизнес</a></li>
+											<li><a href="" title="">Expert Platform</a></li>
+											<li><a href="" title="">IQ Club</a></li>
+											<li><a href="" title="">GE - Pass</a></li>
+										</ul>
+									</div>
+									<div class="col-4 col-soft">
+										<strong class="footer__title">Программы</strong>
+										<ul class="footer-nav-list footer-nav-list2">
+											<li><a href="#" title="">Classo</a></li>
+											<li><a href="#" title="">Classo</a></li>
+											<li><a href="#" title="">Грузинская дорога</a></li>
+											<li><a href="#" title="">Грузинская дорога</a></li>
+											<li><a href="#" title="">Free City</a></li>
+											<li><a href="#" title="">Free City</a></li>
+										</ul>
+									</div>
+									<div class="col-6 col-feedback">
+										<div class="row">
+											<div class="col-4 col-feedback_add">
+												<strong class="footer__title">Обратная связь</strong>
+												<ul class="footer-nav-list footer-list-contact">
+													<li>tel: <a href="tel:+78005555550">8 800 555 55 50</a></li>
+													<li>e-mail: <a href="mailto:info@site.ru">info@site.ru</a></li>
+												</ul>
+											</div>
+											<div class="col-8 col-requisites">
+												<strong class="footer__title">Реквизиты</strong>
+												Здксь будут размещены реквизиты компании.
+											</div>
+										</div>
+									</div>
+									<div class="col-2 col-services-future">
+										<strong class="footer__title">Сервисы FUTURE</strong>
+										<ul class="footer-nav-list">
+											<li><a href="" title="">E-20PAY</a></li>
+											<li><a href="" title="">Народный курьер</a></li>
+											<li><a href="" title="">Народный  магазин</a></li>
+											<li><a href="" title="">Народный  размер</a></li>
+										</ul>
+									</div>
+									<div class="col-2 col-eco-city">
+										<strong class="footer__title">Эко город</strong>
+										<ul class="footer-nav-list">
+											<li><a href="" title="">Трансфер</a></li>
+											<li><a href="" title="">Услуги</a></li>
+											<li><a href="" title="">Подать заявку</a></li>
+											<li><a href="" title="">Договор</a></li>
+										</ul>
+									</div>
+									<div class="col-4 col-personal">
+										<strong class="footer__title">Личный кабинет</strong>
+										<ul class="footer-nav-list footer-nav-list2">
+											<li><a href="" title="">ЦОП</a></li>
+											<li><a href="" title="">Регистрация</a></li>
+											<li><a href="" title="">Мой профиль</a></li>
+											<li><a href="" title="">SOS</a></li>
+											<li><a href="" title="">Мои документы</a></li>
+											<li><a href="" title="">Оставить притензию</a></li>
+											<li><a href="" title="">Архив</a></li>
+											<li><a href="" title="">Обратная связь</a></li>
+											<li><a href="" title="">Бизнес каталог</a></li>
+											<li><a href="" title="">Чат</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container container-small">
+					<div class="container-holder">
+						<div class="box-copy">
+							&copy; Techno Park. Все права защищены. 2020.
+						</div>
+						<div class="box-dis">
+							Created DUOS DIGITAL STUDIO
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</footer>
+	</div>
+	<!-- modals -->
+	<div class="modal-holder">
+		<div id="modal-login" class="modal">
+			<strong class="modal-logo"></strong>
+			<form action="#" method="post" class="modal-form">
+				<span><input type="text" required placeholder="info@site.tg" class="input-text input-text-first_name"></span>
+				<span><input type="tel" required placeholder="••••••••••••••" class="input-text input-text-phone"></span>
+				<div class="modal-row">
+					<label class="style-check">
+						<input type="checkbox" name="user_policy" class="user_policy" value="yes" checked="">
+						<span>Заполнить?</span>
+					</label>
+					<a href="#" class="modal-link" title="Восстановить пароль">Восстановить пароль</a>
+				</div>
+				<button type="submit" class="button">Войти</button>
+			</form>
+			<div class="social-box">
+				<strong class="social-box__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</strong>
+				<ul class="social-box__social">
+					<li><a href="#" title="instagram" class="instagram">instagram</a></li>
+					<li><a href="#" title="youtobe" class="youtobe">youtobe</a></li>
+					<li><a href="#" title="facebook" class="facebook">facebook</a></li>
+					<li><a href="#" title="twitter" class="twitter">twitter</a></li>
+					<li><a href="#" title="telegram" class="telegram">telegram</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
