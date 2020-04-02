@@ -1,0 +1,318 @@
+.footer {
+
+	color: #fefeff;
+	font-size: 14px;
+	background: #4856f3;
+	padding-top: 25px;
+	overflow: hidden;
+
+	&__title {
+		font: 16px IntroCondBlackFree,Helvetica,Arial,sans-serif;
+		margin: 0 0 10px;
+		display: block;
+	}
+
+	li:after {
+		display: none;
+	}
+
+	a {
+		color: #fefeff;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-top .container-holder {
+		max-width: $width-text;
+	}
+
+	.row {
+		margin-bottom: 0;
+	}
+
+	.row [class*="col-"] {
+		padding-bottom: 13px;
+	}
+}
+
+.footer .row-footer-nav > [class*="col-"] {
+	padding-bottom: 0;
+}
+
+.logo-footer {
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 226px;
+	height: 52px;
+	margin: 0 0 9px;
+	display: block;
+	background: url("../images/logo-footer.png") no-repeat;
+
+	a {
+		display: block;
+		height: 100%;
+	}
+}
+
+.col-footer-text {
+	width: 234px;
+	float: left;
+	line-height: 1.2;
+	position: relative;
+	z-index: 2;
+
+	&__text {
+		padding-right: 15px;
+		padding-bottom: 39px;
+		font-size: 13px;
+
+		p {
+			margin: 0 0 5px;
+		}
+	}
+
+	@include res(m){
+		width: 100%;
+		float: none;
+		overflow: hidden;
+	}
+}
+
+.col-footer-nav {
+	overflow: hidden;
+}
+
+.footer-top {
+	padding-top: 25px;
+
+	> .container-holder:before {
+		content: "";
+		position: absolute;
+		z-index: 0;
+		background: #3341ca;
+		width: 550px;
+		height: 550px;
+		top: -291px;
+		border-radius: 50%;
+		left: -432px;
+	}
+}
+
+.footer-nav-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		padding: 0 0 9px;
+	}
+}
+
+.footer-nav-list2 {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	li {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-right: 15px;
+		padding-left: 15px;
+
+		@include res(ll){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+.col-main-sections {
+
+	@include res(xxll){
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	@include res(ll){
+		flex: 0 0 30%;
+		max-width: 30%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.col-nav-sections {
+
+	@include res(xxll){
+		flex: 0 0 80%;
+		max-width: 80%;
+	}
+
+	@include res(ll){
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.row-footer-nav  .col-services {
+
+	@include res(xxll){
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+		order: 1;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.row-footer-nav  .col-eco-city {
+
+	@include res(xxll){
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+		order: 2;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+.row-footer-nav  .col-services-future {
+
+	@include res(xxll){
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+		order: 3;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.row-footer-nav  .col-soft {
+
+	@include res(xxll){
+		flex: 0 0 66.6666%;
+		max-width: 66.6666%;
+		order: 4;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.row-footer-nav  .col-feedback {
+
+	@include res(xxll){
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+		order: 5;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.row-footer-nav  .col-personal {
+
+	@include res(xxll){
+		flex: 0 0 66.6666%;
+		max-width: 66.6666%;
+		order: 6;
+	}
+
+	@include res(ll){
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@include res(m){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.box-requisites-mob {
+	display: none;
+	padding-top: 45px;
+	padding-bottom: 25px;
+	overflow: hidden;
+
+	@include res(xl){
+		display: block;
+	}
+}
+
+.row-footer-nav  .col-requisites {
+	@include res(xl){
+		display: none;
+	}
+}
+
+.row-footer-nav  .col-feedback_add {
+	@include res(xxll){
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.footer-bottom {
+	overflow: hidden;
+	font-weight: 300;
+
+	.box-copy {
+		float: left;
+	}
+
+	.box-dis {
+		float: right;
+		padding: 0 72px 0 0;
+	}
+}
