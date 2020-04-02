@@ -88,6 +88,10 @@
 		margin: 0 auto;
 		position: relative;
 		max-width: $width;
+
+		&__text {
+			overflow: hidden;
+		}
 	}
 
 	&-convas {

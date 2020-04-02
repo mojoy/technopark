@@ -532,6 +532,7 @@ button::-moz-focus-inner { border: 0; padding: 0; }
 .container__heading-center { text-align: center; }
 .container__heading p { margin: 0 0 10px; }
 .container-holder { margin: 0 auto; position: relative; max-width: 1600px; }
+.container-holder__text { overflow: hidden; }
 .container-convas { overflow: hidden; }
 .container-convas img { display: block; width: 100%; }
 .container-inner-center { overflow: hidden; }

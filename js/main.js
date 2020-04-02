@@ -50,7 +50,41 @@ $(document).ready(function($) {
         'transitionOut': 'none'
     });
 
+
+
+    $('#movie1').trigger('play');
+    //$('#movie1').trigger('pause');
+
+
+
+
+
+
+
+
+    $(window).scroll(function(event) {
+        if ($(".container").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            $('.animation').addClass('triggerAnim');
+        }
+        else {
+            $('.animation').removeClass('triggerAnim');
+        }
+    });
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
 
 
 
