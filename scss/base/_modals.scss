@@ -4,11 +4,11 @@
 
 .modal {
 	background: #1335f9 url("../images/bg-modal.jpg") 50% 50%;
-	width: 800px;
-	padding-top: 45px;
+	width: 570px;
+	padding-top: 25px;
 	color: #fff;
 	font-size: 16px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	margin: 0 !important;
 
 	@include res(m){
@@ -25,10 +25,10 @@
 	}
 
 	&-logo {
-		margin: 0 auto 31px;
+		margin: 0 auto 15px;
 		display: block;
-		width: 221px;
-		height: 245px;
+		width: 131px;
+		height: 145px;
 		overflow: hidden;
 		text-indent: -9999px;
 		background: url("../images/logo-modal.png") 0 0 no-repeat;
@@ -64,7 +64,7 @@
 	}
 	&-row {
 		overflow: hidden;
-		padding: 14px 0 38px;
+		padding: 14px 0 25px;
 
 		@include res(s){
 			padding: 7px 0 20px;
@@ -82,15 +82,15 @@
 
 	.button {
 		position: relative;
-		padding: 27px 30px;
+		padding: 12px 20px;
 		font-family: "Lato-Regular", Arial, sans-serif;
 		background-color: #778cb7;
 		border: 1px solid #a7bad4;
 		color: #fff;
-		font-size: 31px;
+		font-size: 28px;
 		border-radius: 7px;
-		width: 100%;
-		margin: 0 0 45px;
+		width: auto;
+		margin: 0 auto 25px;
 		height: auto;
 
 		@include res(l){
@@ -99,7 +99,7 @@
 		}
 
 		@include res(s){
-			margin: 0 0 18px;
+			margin: 0 auto 18px;
 		}
 
 		&:focus {

@@ -25,11 +25,9 @@
 	<!-- og -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
-	<link href="https://www.delac.io/wow/css/libs/animate.css" rel="stylesheet">
-
 </head>
-<body  onload="init();">
+<body>
+	<div class="loader-wrapper"><div class="loader"></div></div>
 	<div class="wrapper">
 		<header class="header container container-full">
 			<div class="container-holder">
@@ -227,30 +225,14 @@
 					</div>
 				</div>
 				<div class="container-convas wow fadeIn" data-wow-delay="0.5s">
-					<img src="images/test-photo/bg-header.jpg" alt="" class="header-images">
-
-
-					<div class="wxmfkx-0 bsKtdo">
-						<figure class="wxmfkx-2 zfHHs sc-3l1aft-0 cFKiff">
-							<picture class="wxmfkx-2 zfHHs sc-3l1aft-2 egZzup sc-18wpglb-0 kNQnOA">
-								<img alt="OMM cover image" sizes="60vw" class="sc-18wpglb-1 hKlHAs"/></picture>
-							<video src="https://content.production.omm.art/media/Benim-Filmim-41_191004_132212.mp4" preload="metadata" muted="" loop="" playsinline="" id="movie1" class="sc-3l1aft-1 jryEWV"></video>
-						</figure>
-					</div>
-
-
-					<!-- chinese-port
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1600px; height:955px">
-						<canvas id="canvas" width="1600" height="955" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:955px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
-					</div>-->
+					<video id="movie1" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay" playsinline="" width="100%" height="100%" poster="images/test-photo/bg-header.jpg" preload="none">
+						<source data-src="video/1.mp4" type="video/mp4">
+						<source data-src="video/1.webm" type="video/webm">
+					</video>
 				</div>
 			</div>
 		</header>
-
 		<!-- sea-port -->
-
 		<section class="container container-full container-sea-port ">
 			<div class="container-holder">
 				<div class="container container-sea-port-container">
@@ -274,21 +256,16 @@
 					</div>
 				</div>
 				<div class="container-sea-port-bg wow fadeIn" data-wow-delay="0.7s">
-					<img src="images/test-photo/img-3.png" alt="">
-
-					<!-- порт
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1250px; height:760px">
-						<canvas id="canvas" width="1250" height="760" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1250px; height:760px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
+					<div class="container-sea-port-bg-inner">
+						<video id="sea-port" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay" playsinline="" width="100%" height="100%" poster="images/test-photo/img-3.png" preload="none">
+							<source data-src="video/Port_Georg.mp4" type="video/mp4">
+							<source data-src="video/Port_Georg.webm" type="video/webm">
+						</video>
 					</div>
-					-->
 				</div>
 			</div>
 		</section>
-
 		<!-- air-port -->
-
 		<section class="container container-full container-air-port">
 			<div class="container-holder">
 				<div class="container container-air-port-container">
@@ -302,7 +279,7 @@
 									<p>Инновационное программное обеспечение на складах создает синхронизацию учета поставщиков и внутреннего аудита, оптимизацию площадей и упаковки комбинированных отправлений, учет и распределение персонала, планирование пиковых нагрузок, интеграцию с внешними платежными карточными и банковскими системами (в том числе, и системой прямых платежей - E-20PAY).</p>
 								</div>
 							</div>
-							<div class="btn-row wow bounceInRight">
+							<div class="btn-row wow bounceInRight animated">
 								<a href="#" class="button button-blue" title="Стандартные сервисы">Стандартные сервисы</a>
 								<a href="#" class="button button-blue-dark" title="Иновационные сервисы">Иновационные сервисы</a>
 							</div>
@@ -310,22 +287,16 @@
 					</div>
 				</div>
 				<div class="container-air-port-bg wow fadeIn" data-wow-delay="0.7s">
-					<img src="images/test-photo/container-air-port-bg.jpg" alt="">
-					<!-- tr
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1281px; height:731px">
-						<canvas id="canvas" width="1281" height="731" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1281px; height:731px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
+					<div class="container-air-port-bg-inner">
+						<video id="air-port" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay" playsinline="" width="100%" height="100%" poster="images/test-photo/container-air-port-bg.jpg" preload="none">
+							<source data-src="video/3.mp4" type="video/mp4">
+							<source data-src="video/3.webm" type="video/webm">
+						</video>
 					</div>
-					-->
-
 				</div>
 			</div>
 		</section>
-
-
 		<!-- E-20PAY -->
-
 		<section class="container container-full container-e20pay">
 			<div class="container-holder">
 				<div class="container__heading container__heading-center  wow bounceInDown">
@@ -336,7 +307,6 @@
 					<div class="container-holder">
 						<div class="row">
 							<div class="col-6 ">
-
 								<div class="text-box text-box-dark  wow bounceInLeft">
 									<p>Удобный платежный сервис E-20PAY - это прямые платежи (банк –банк) с самой минимальной комиссией в мире- всего 0,5%!</p>
 									<p>Внедрение нового платежного сервиса E-20PAY может существенно повлиять на многие сегменты экономики, где есть огромное количество транзакций. Именно комиссия с онлайн-продаж и стала отправной точкой построения концепта логистического проекта CLASSО в Грузии и Болгарии, смещающего центр дохода склада с обычных складских услуг на доход с транзакций.</p>
@@ -345,24 +315,18 @@
 									<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
 									<a href="#" class="button button-blue-dark" title="Зарегистрироваться">Зарегистрироваться</a>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="container-convas wow fadeIn" data-wow-delay="0.7s">
-					<img src="images/test-photo/img-pay.jpg" alt="">
-					<!-- e20pay
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1600px; height:1200px">
-						<canvas id="canvas" width="1600" height="1200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:1200px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
-					</div>
-					-->
+					<video id="pay20" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay" playsinline="" width="100%" height="100%" poster="images/test-photo/img-pay.jpg" preload="none">
+						<source data-src="video/4.mp4" type="video/mp4">
+						<source data-src="video/4.webm" type="video/webm">
+					</video>
 				</div>
 			</div>
 		</section>
-
 		<!--  CLASSO -->
 		<section class="container container-full warehouses-classo">
 			<div class="container-holder">
@@ -370,36 +334,23 @@
 					<h2 class="container__title">Склады CLASSO- это сервисы, не имеющие аналогов!</h2>
 				</div>
 				<div class="container-convas wow fadeIn" data-wow-delay="0.7s">
-					<img src="images/test-photo/img-sklad.jpg" alt="">
-
-					<!-- storage
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1600px; height:940px">
-						<canvas id="canvas" width="1600" height="940" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:940px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
-					</div>
-					-->
-
+					<video id="warehouses-classo" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/img-sklad.jpg" preload="none">
+						<source data-src="video/5-02.mp4" type="video/mp4">
+						<source data-src="video/5-02.webm" type="video/webm">
+					</video>
 				</div>
 			</div>
 		</section>
 		<!--//  CLASSO -->
-
 		<section class="container container-box container-truck">
 			<div class="container-holder">
 				<div class="row">
 					<div class="col-6 col-convas  wow  bounceInLeft">
 						<div class="container-convas">
-							<img src="images/test-photo/img-truck.jpg" alt="">
-
-							<!-- track
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:660px; height:460px">
-								<canvas id="canvas" width="660" height="460" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:660px; height:460px; position: absolute; left: 0px; top: 0px; display: block;">
-								</div>
-							</div>
-							-->
-
+							<video id="truck" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/img-truck.jpg" preload="none">
+								<source data-src="video/5-01.mp4" type="video/mp4">
+								<source data-src="video/5-01.webm" type="video/webm">
+							</video>
 						</div>
 					</div>
 					<div class="col-6 col-text">
@@ -420,11 +371,9 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="container container-box container-courier">
 			<div class="container-holder">
 				<div class="row">
-
 					<div class="col-6 col-text">
 						<div class="text-box  wow   bounceInLeft">
 							<h2>Уникальный сервис доставки последней мили - «Народный курьер»</h2>
@@ -437,48 +386,33 @@
 							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
-
 					<div class="col-6 col-convas   wow bounceInRight">
 						<div class="container-convas">
-							<img src="images/test-photo/img-courier.jpg" alt="">
-
-							<!-- national-courier
-
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:800px; height:500px">
-								<canvas id="canvas" width="800" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
-								</div>
-							</div>
-							-->
-
+							<!-- <img src="images/test-photo/img-courier.jpg" alt="">-->
+							<video id="courier" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/img-courier.jpg" preload="none">
+								<source data-src="video/6-01.mp4" type="video/mp4">
+								<source data-src="video/6-01.webm" type="video/webm">
+							</video>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- people-courier -->
-
 		<section class="container container-three-col people-courier">
 			<div class="container-holder">
 				<div class="row">
 					<div class="col-12 container-convas container-convas-web  wow fadeIn" data-wow-delay="0.7s">
-						<img src="images/test-photo/img-people-courier.jpg" alt="">
-
-						<!-- stages
-						<div id="animation_container" style="background-color:rgba(0, 0, 0, 0.00); width:1600px; height:500px">
-							<canvas id="canvas" width="1600" height="500" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
-							<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1600px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
-							</div>
-						</div>
-						-->
-
+						<video id="people-courier" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/img-people-courier.jpg" preload="none">
+							<source data-src="video/6-02.mp4" type="video/mp4">
+							<source data-src="video/6-02.webm" type="video/webm">
+						</video>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 wow fadeIn" data-wow-delay="0.5s">
 						<div class="container-convas__images">
-							<img src="images/test-photo/img-people-courier-1.jpg" alt="">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/img-people-courier-1.jpg" data-srcset="images/test-photo/img-people-courier-1.jpg 2x, images/test-photo/img-people-courier-1.jpg 1x" alt="">
 						</div>
 						<div class="container-bank-bottom">
 							<h3 class="container-bank__title">Шаг первый</h3>
@@ -490,7 +424,7 @@
 					</div>
 					<div class="col-4 wow fadeIn" data-wow-delay="0.5s">
 						<div class="container-convas__images">
-							<img src="images/test-photo/img-people-courier-2.jpg" alt="">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/img-people-courier-2.jpg" data-srcset="images/test-photo/img-people-courier-2.jpg 2x, images/test-photo/img-people-courier-2.jpg 1x" alt="">
 						</div>
 						<div class="container-bank-bottom">
 							<h3 class="container-bank__title">Шаг первый</h3>
@@ -501,7 +435,7 @@
 					</div>
 					<div class="col-4 wow fadeIn" data-wow-delay="0.5s">
 						<div class="container-convas__images">
-							<img src="images/test-photo/img-people-courier-3.jpg" alt="">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/img-people-courier-3.jpg" data-srcset="images/test-photo/img-people-courier-3.jpg 2x, images/test-photo/img-people-courier-3.jpg 1x" alt="">
 						</div>
 						<div class="container-bank-bottom">
 							<h3 class="container-bank__title">Шаг третий</h3>
@@ -513,9 +447,7 @@
 				</div>
 			</div>
 		</section>
-
 		<!--// people-courier -->
-
 		<div class="container container-full n-courier">
 			<div class="container-holder">
 				<div class="container__heading container__heading-center wow bounceInDown">
@@ -575,15 +507,13 @@
 							</div>
 						</div>
 						<div class="container-convas wow fadeIn" data-wow-delay="0.7s">
-							<img src="images/test-photo/img-n-courier.png" alt="">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/img-n-courier.png" data-srcset="images/test-photo/img-n-courier.png 2x, images/test-photo/img-n-courier.png 1x" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<!-- texnoparkeco  -->
-
 		<section class="container container-full container-texnoparkeco">
 			<div class="container-holder">
 				<div class="container__heading container__heading-center wow bounceInDown">
@@ -591,7 +521,7 @@
 					<p>Город уникальных возможностей для бизнеса!</p>
 				</div>
 				<div class="container-convas wow fadeIn" data-wow-delay="0.5s">
-					<img src="images/test-photo/texnopark-eco.jpg" alt="">
+					<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/texnopark-eco.jpg" data-srcset="images/test-photo/texnopark-eco.jpg 2x, images/test-photo/texnopark-eco.jpg 1x" alt="">
 				</div>
 				<div class="container-texnoparkeco-inner">
 					<div class="container-texnoparkeco-inner2">
@@ -648,10 +578,8 @@
 				</div>
 			</div>
 		</section>
-
 		<!--// texnoparkeco -->
 		<!-- bank1 -->
-
 		<section class="container container-three-col container-bank container-bank1">
 			<div class="container-holder">
 				<div class="container__heading container__heading-center wow bounceInDown">
@@ -659,21 +587,15 @@
 					<p>Бизнесу есть, что предложить уже сегодня! </p>
 				</div>
 				<div class="container-convas container-convas-web wow fadeIn" data-wow-delay="0.5s">
-					<img src="images/test-photo/bank1.jpg" alt="">
-
-					<!-- investments
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1450px; height:720px">
-						<canvas id="canvas" width="1450" height="720" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1450px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
-					</div>
-					-->
-
+					<video id="bank1" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/bank1.jpg" preload="none">
+						<source data-src="video/8-01.mp4" type="video/mp4">
+						<source data-src="video/8-01.webm" type="video/webm">
+					</video>
 				</div>
 				<div class="row">
 					<div class="col-4">
-						<div class="container-convas__images">
-							<img src="images/test-photo/bank1-1.jpg" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
+						<div class="container-convas__images wow fadeIn" data-wow-delay="0.5s">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/bank1-1.jpg" data-srcset="images/test-photo/bank1-1.jpg 2x, images/test-photo/bank1-1.jpg 1x" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
 						</div>
 						<div class="container-bank-bottom wow fadeIn" data-wow-delay="0.5s">
 							<h3 class="container-bank__title">Инвестировать просто!</h3>
@@ -684,7 +606,7 @@
 					</div>
 					<div class="col-4">
 						<div class="container-convas__images">
-							<img src="images/test-photo/bank1-2.jpg" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/bank1-2.jpg" data-srcset="images/test-photo/bank1-2.jpg 2x, images/test-photo/bank1-2.jpg 1x" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
 						</div>
 						<div class="container-bank-bottom wow fadeIn" data-wow-delay="0.5s">
 							<h3 class="container-bank__title">Создайте собственный бизнес!</h3>
@@ -695,7 +617,7 @@
 					</div>
 					<div class="col-4">
 						<div class="container-convas__images">
-							<img src="images/test-photo/bank1-3.jpg" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/bank1-3.jpg" data-srcset="images/test-photo/bank1-3.jpg 2x, images/test-photo/bank1-3.jpg 1x" alt="" class=" wow fadeIn" data-wow-delay="0.5s">
 						</div>
 						<div class="container-bank-bottom wow fadeIn" data-wow-delay="0.5s">
 							<h3 class="container-bank__title">Мировые инвестиции</h3>
@@ -707,24 +629,16 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- bank2 -->
-
 		<section class="container container-box container-bank2">
 			<div class="container-holder">
 				<div class="row">
 					<div class="col-6 col-convas wow bounceInLeft">
 						<div class="container-convas">
-							<img src="images/test-photo/bank2.jpg" alt="">
-
-							<!-- list
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:560px; height:560px">
-								<canvas id="canvas" width="560" height="560" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:560px; position: absolute; left: 0px; top: 0px; display: block;">
-								</div>
-							</div>
-							-->
-
+							<video id="bank2" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/bank2.jpg" preload="none">
+								<source data-src="video/8-02.mp4" type="video/mp4">
+								<source data-src="video/8-02.webm" type="video/webm">
+							</video>
 						</div>
 					</div>
 					<div class="col-6 col-text">
@@ -741,9 +655,7 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- bank3 -->
-
 		<section class="container container-box container-bank3">
 			<div class="container-holder">
 				<div class="row">
@@ -759,37 +671,20 @@
 					</div>
 					<div class="col-6 col-convas wow bounceInRight">
 						<div class="container-convas">
-							<img src="images/test-photo/bank3.jpg" alt="">
-
-							<!-- bank
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:750px; height:670px">
-								<canvas id="canvas" width="750" height="670" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:750px; height:670px; position: absolute; left: 0px; top: 0px; display: block;">
-								</div>
-							</div>
-							-->
-
+							<video id="bank3" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/bank3.jpg" preload="none">
+								<source data-src="video/8-03.mp4" type="video/mp4">
+								<source data-src="video/8-03.webm" type="video/webm">
+							</video>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- bank4 -->
-
 		<section class="container container-full container-inner-center container-bank4">
 			<div class="container-holder">
 				<div class="container-convas  wow fadeIn">
-					<img src="images/test-photo/bank4.jpg" alt="">
-
-					<!-- city
-					<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1500px; height:1000px">
-						<canvas id="canvas" width="1500" height="1000" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1500px; height:1000px; position: absolute; left: 0px; top: 0px; display: block;">
-						</div>
-					</div>
-					-->
-
+					<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/bank4.jpg"  data-srcset="images/test-photo/bank4.jpg 2x, images/test-photo/bank4.jpg 1x" alt="">
 				</div>
 				<div class="container">
 					<div class="container-content">
@@ -807,15 +702,13 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Innovative inet catalog -->
-
 		<section class="container container-box container-partner">
 			<div class="container-holder">
 				<div class="row">
 					<div class="col-6 col-convas wow bounceInLeft">
 						<div class="container-convas">
-							<img src="images/test-photo/img4.jpg" alt="">
+							<img class="lazy" src="images/placeholder-image.jpg" data-src="images/test-photo/img4.jpg"  data-srcset="images/test-photo/img4.jpg 2x, images/test-photo/img4.jpg 1x" alt="">
 						</div>
 					</div>
 					<div class="col-6 col-text">
@@ -828,9 +721,7 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Innovative inet catalog -->
-
 		<section class="container container-box container-inno">
 			<div class="container-holder">
 				<div class="row">
@@ -846,23 +737,16 @@
 					</div>
 					<div class="col-6 col-convas wow bounceInRight">
 						<div class="container-convas">
-							<img src="images/test-photo/img5.jpg" alt="" style="display: none">
-
-							<!-- man b2b -->
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:880px; height:850px">
-								<canvas id="canvas" width="880" height="850" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:880px; height:850px; position: absolute; left: 0px; top: 0px; display: block;">
-								</div>
-							</div>
-
+							<video id="container-inno" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay"  playsinline="" width="100%" height="100%" poster="images/test-photo/img5.jpg" preload="none">
+								<source data-src="video/9.mp4" type="video/mp4">
+								<source data-src="video/9.webm" type="video/webm">
+							</video>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- footer -->
-
 		<footer class="footer container  wow fadeIn">
 			<div class="container-holder">
 			<div class="footer-top">
@@ -1003,7 +887,7 @@
 				<span><input type="tel" required placeholder="••••••••••••••" class="input-text input-text-phone"></span>
 				<div class="modal-row">
 					<label class="style-check">
-						<input type="checkbox" name="user_policy" class="user_policy" value="yes" checked="">
+						<input type="checkbox" name="user_policy" class="user_policy" value="yes" checked="checked">
 						<span>Заполнить?</span>
 					</label>
 					<a href="#" class="modal-link" title="Восстановить пароль">Восстановить пароль</a>
@@ -1022,38 +906,14 @@
 			</div>
 		</div>
 	</div>
+	<link href="https://www.delac.io/wow/css/libs/animate.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
 	<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
-
-
-
-	<script src="js/createjs-2015.11.26.min.js"></script>
-	<!-- write your code here -->
-
-	<script src="js/chinese-port.js"></script>
-	<script src="js/port_georg.js"></script>
-	<script src="js/tr.js"></script>
-	<script src="js/4slide.js"></script>
-	<script src="js/storage.js"></script>
-	<script src="js/track.js"></script>
-	<script src="js/national-courier.js"></script>
-	<script src="js/stages.js"></script>
-	<script src="js/investments.js"></script>
-	<script src="js/list.js"></script>
-	<script src="js/bank.js"></script>
-	<script src="js/city.js"></script>
-	<script src="js/man-b2b.js"></script>
-
 	<script src="js/main.js"></script>
-
-
 	<script>
         new WOW().init();
 	</script>
-
 	<!-- write your code here -->
 </body>
 </html>

@@ -9,6 +9,7 @@
 @import 'modules/header';
 @import 'modules/social-box';
 @import 'modules/footer';
+@import 'modules/loader';
 * {box-sizing: border-box;}
 .bg {
 	position: absolute;
@@ -22,6 +23,10 @@
 
 .wrapper {
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
 .col-convas {
@@ -120,31 +125,6 @@
 	z-index: 10;
 	margin-top: -170px;
 
-	@include res(l){
-		&:before {
-			content: "";
-			left: 0;
-			right: 0;
-			top: 0;
-			background: url("../images/bg-header-mob-b.jpg") no-repeat 0 100%;
-			position: absolute;
-			z-index: 0;
-			height: 167px;
-
-			@include res(s) {
-				height: 116px;
-				background-size: contain;
-				right: auto;
-				width: 680px;
-				background: url("../images/bg-header-mob-b2.jpg") no-repeat 0 100%;
-			}
-
-			@include res(xs) {
-				height: 90px;
-			}
-		}
-	}
-
 	@include res(xl){
 		margin-top: -110px;
 	}
@@ -167,6 +147,8 @@
 				flex: 0 0 100%;
 				max-width: 100%;
 				margin-bottom: 10px;
+
+
 			}
 
 			.container-sea-port-container {
@@ -189,7 +171,7 @@
 	&-bg {
 		position: relative;
 		z-index: 0;
-		margin-top: -690px;
+		margin-top: -565px;
 
 		@include res(xl){
 			margin-top: -720px;
@@ -198,6 +180,20 @@
 		img {
 			display: block;
 			max-width: 100%;
+		}
+
+		&-inner {
+			float: left;
+			width: 895px;
+			overflow: hidden;
+
+			video {
+				width: 100.3%;
+			}
+
+			@include res(l) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -270,11 +266,25 @@
 	&-bg {
 		position: relative;
 		z-index: 0;
-		margin-top: -715px;
+		margin-top: -650px;
 
 		img {
 			display: block;
 			max-width: 100%;
+		}
+
+		&-inner {
+			float: left;
+			overflow: hidden;
+			width: 1050px;
+
+			video {
+				width: 100.3%;
+			}
+
+			@include res(l) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -826,6 +836,7 @@
 		img {
 			display: block;
 			max-width: 100%;
+			margin: 0 auto 15px;
 		}
 
 		@include res(l){
@@ -842,6 +853,17 @@
 	}
 }
 
+.container-bank1 {
+	.container-convas {
+		overflow: hidden;
+		margin: 0 100px 0 37px;
+
+		video {
+			width: 100.3%;
+		}
+	}
+}
+
 .container-bank2 {
 	.container-holder {
 		max-width: $width-text;
@@ -849,6 +871,11 @@
 
 	.text-box {
 		margin-top: 34px;
+	}
+
+	.container-convas {
+		max-width: 560px;
+		margin: 0 auto;
 	}
 }
 
@@ -909,6 +936,10 @@
 	}
 }
 
+.container-truck .container-convas {
+	max-width: 653px;
+	margin: 0 auto;
+}
 
 .container-inno {
 	margin-bottom: 77px;
