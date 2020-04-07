@@ -151,8 +151,6 @@ video {
 				flex: 0 0 100%;
 				max-width: 100%;
 				margin-bottom: 10px;
-
-
 			}
 
 			.container-sea-port-container {
@@ -188,15 +186,28 @@ video {
 
 		&-inner {
 			float: left;
-			width: 895px;
+			width: 1252px;
 			overflow: hidden;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				top: 0;
+				right: 0;
+				width: 3px;
+				background: #fff;
+				z-index: 3;
+			}
 
 			video {
-				width: 100.3%;
+				width: 100%;
 			}
 
 			@include res(l) {
 				width: 100%;
+				height: auto;
 			}
 		}
 	}
@@ -280,7 +291,7 @@ video {
 		&-inner {
 			float: left;
 			overflow: hidden;
-			width: 1050px;
+			width: 1110px;
 
 			video {
 				width: 100.3%;

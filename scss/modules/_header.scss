@@ -5,6 +5,10 @@
 	z-index: 12 !important;
 	font-weight: 500;
 
+	@include res(ll){
+		margin-bottom: 15px;
+	}
+
 	.container-convas {
 		video {
 			width: 100.2%;
