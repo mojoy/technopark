@@ -5,6 +5,13 @@
 	z-index: 12 !important;
 	font-weight: 500;
 
+	.container-convas {
+		video {
+			width: 100.2%;
+			margin-left: -2px;
+		}
+	}
+
 
 /*
 	@include res(l){
@@ -38,29 +45,38 @@
 	}
 
 	.header-top {
-		padding: 35px 50px 44px;
-		background: rgba(74,102,236,0.6);
+		background: rgba(74, 102, 236, 0.6);
 		position: relative;
 		z-index: 6;
+		margin: 0 -9999px;
+		padding: 0 9999px;
 
-		@include res(xl){
-			padding: 36px 20px;
+		&-inner {
+			position: relative;
+			padding: 35px 75px 44px;
+
+			@include res(xl){
+				padding: 36px 20px;
+				margin: 0;
+			}
 		}
 
 		@include res(l){
-			margin-bottom: 489px;
+			margin: 0 -9999px 489px;
 		}
 
 		@include res(m){
-			margin-bottom: 460px;
+			margin: 0 -9999px 460px;
 		}
 
 		@include res(s){
-			padding: 20px;
+
+			&-inner {
+				padding: 20px;
+			}
 		}
 
 		@include res(xs){
-			padding: 20px;
 			margin-bottom: 310px;
 		}
 	}
@@ -222,19 +238,21 @@
 		right: 100%;
 		padding: 0 0 0 9999px;
 		height: 950px;
-		background: red;
+		background: url("../images/bg-header-left.png") no-repeat 100% -3px;
 		content: "";
 		position: absolute;
+		opacity: 0.98;
 	}
 
 	&:before {
 		top: 0;
 		left: 100%;
 		padding: 0 0 0 9999px;
-		height: 950px;
-		background: red;
+		height: 989px;
+		background: url("../images/bg-header-right.png") no-repeat -2px -3px;
 		content: "";
 		position: absolute;
+		opacity: 0.96;
 	}
 }
 
@@ -354,7 +372,7 @@
 		margin-bottom: 13px;
 	}
 
-	@include res(xs){
+	@include res(m){
 		float: none;
 		margin: 0 0 15px;
 
@@ -371,7 +389,7 @@
 		float: left;
 		border-left: 1px solid #899bf3;
 
-		@include res(xs){
+		@include res(m){
 			border: none;
 			padding: 0;
 		}
@@ -405,6 +423,10 @@
 		span {
 			display: block;
 			text-transform: uppercase;
+
+			@include res(xs){
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -443,7 +465,7 @@
 	}
 }
 .header-col-login {
-	@include res(xs){
+	@include res(m){
 		float: right;
 	}
 }
@@ -664,16 +686,21 @@
 	right: 0;
 	font-size: 14px;
 	background: rgba(22, 33, 163,0.9);
-	padding: 5px 15px 0 75px;
-
 	visibility: hidden;
 	opacity: 0;
 	z-index: 0;
 	transition: all 0.3s ease;
 
-	@include res(ll){
-		padding-left: 15px;
+	&-inner {
+		padding: 5px 15px 0 75px;
+		overflow: hidden;
+
+		@include res(lm){
+			padding: 0;
+		}
 	}
+
+
 
 	&.menu-pop-up-active {
 		opacity: 1;
@@ -685,6 +712,10 @@
 		display: block;
 		margin: 7px 15px 10px;
 		font: 15px/1.5 Lato-Regular, Arial;
+
+		@include res(lm){
+			display: none;
+		}
 	}
 
 	.btn-close-menu {
@@ -695,11 +726,11 @@
 		text-align: center;
 		font: 15px/1.6 Lato-Regular, Arial;
 		cursor: pointer;
-		margin: 0 -20px 0 -80px;
-		display: none;
+		display: block;
+		margin: 0;
 
-		@include res(m){
-			display: block;
+		@include res(lm){
+			display: none;
 		}
 	}
 }
@@ -717,6 +748,13 @@
 				max-width: 100%;
 			}
 		}
+
+		@include res(lm) {
+			[class*="col-"] {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 
 	&__title {
@@ -724,7 +762,31 @@
 		text-transform: uppercase;
 		font: 16px IntroCondBlackFree,Helvetica,Arial,sans-serif;
 		margin: 0 0 10px;
+
+		@include res(lm) {
+			margin: 0;
+			font-size: 17px;
+			padding: 11px 15px;
+			cursor: pointer;
+			border-bottom: 1px solid #374bcc;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				width: 14px;
+				height: 14px;
+				margin: -10px 0 0;
+				border-left: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+				transform: rotate(-45deg) translate3d(0, 0, 0) scaleX(0.8) scaleY(0.8);
+			}
+
+		}
 	}
+
 
 	&__list {
 		margin: 0;
@@ -740,7 +802,25 @@
 				display: none;
 			}
 		}
+
+		@include res(lm) {
+			display: none;
+			padding: 10px 15px 5px;
+			background: #4963f2;
+			overflow: hidden;
+		}
 	}
+
+	&-wrapper.open-menu {
+		.container-menu__list {
+			display: block;
+		}
+		.container-menu__title::after {
+			margin: -8px 0 0;
+			transform: rotate(45deg) translate3d(0, 0, 0) scaleX(0.8) scaleY(0.8);
+		}
+	}
+
 
 	&__sub-list {
 		margin: 0;
@@ -768,6 +848,7 @@
 		text-decoration: underline;
 	}
 }
+
 
 .promo {
 	font: 20px/1.5 "Lato Light", Arial;

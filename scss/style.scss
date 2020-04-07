@@ -20,7 +20,11 @@
 	z-index: 5;
 	display: none;
 }
-
+video {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
 .wrapper {
 	overflow: hidden;
 	position: relative;
@@ -885,6 +889,11 @@
 	.container-holder {
 		max-width: $width-text;
 	}
+
+	video {
+		height: 100.2%;
+		margin-bottom: -2px;
+	}
 }
 
 .container-bank4 {
@@ -954,6 +963,10 @@
 		@include res(l){
 			margin-left: 0;
 		}
+	}
+
+	video {
+		margin: -3px 0;
 	}
 }
 

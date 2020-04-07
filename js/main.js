@@ -35,12 +35,25 @@ $(document).ready(function($) {
         return false;
     });
 
+    $(document).on('click', ".container-menu__title", function(e){
+        e.preventDefault();
+        if ($(this).parent().hasClass('open-menu')) {
+            $(this).parent().removeClass('open-menu');
+        }
+        else {
+            $(this).parent().addClass('open-menu');
+        }
+        return false;
+    });
+
     $(document).on('click', ".btn-close-menu", function(e){
         e.preventDefault();
         $('.menu-pop-up').removeClass('menu-pop-up-active');
         $('.box-menu__btn').removeClass('box-menu__btn-active');
         return false;
     });
+
+
 
     $('a.fancy-modal').fancybox({
         'padding': 0,
@@ -54,18 +67,8 @@ $(document).ready(function($) {
         $(".loader-wrapper").addClass("loader-wrapper-hidden");
         $(".wrapper").attr("style","z-index: 3; opacity: 1;");
     }
-    setTimeout(sayHi, 2000);
+    setTimeout(sayHi, 1300);
 
-    // Fixing Webkit that not clearing input/textarea when get focus
-    $(function(){
-        if ($.browser.webkit) {
-            $('input, textarea').on('focus',function(){
-                if ( $(this).attr('placeholder') ) $(this).data('placeholder', $(this).attr('placeholder')).removeAttr('placeholder');
-            }).on('blur', function(){
-                if ( $(this).data('placeholder') ) $(this).attr('placeholder', $(this).data('placeholder')).removeData('placeholder');
-            });
-        }
-    });
 
 });
 

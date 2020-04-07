@@ -35,8 +35,8 @@
 		background-size: cover;
 
 		@include res(s){
-			width: 122px;
-			height: 135px;
+			width: 117px;
+			height: 130px;
 			margin-bottom: 19px;
 		}
 
@@ -202,6 +202,10 @@
 			margin: 0 0 30px;
 			justify-content: center;
 
+			@include res(xs){
+				margin: 0 0 15px;
+			}
+
 			li:after {
 				display: none;
 			}
@@ -259,6 +263,7 @@
 	border-radius: 50%;
 	border: none;
 	opacity: 1;
+	display: none;
 
 	&::before,
 	&::after {

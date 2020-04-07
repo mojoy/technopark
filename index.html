@@ -6,25 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title>texnopark main</title>
-	<!-- favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/favicons/manifest.json">
-	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#f8fbfc">
-	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#239ca3">
-	<!-- favicons -->
-	<!-- og -->
-	<meta property="og:title" content="texnopark">
-	<meta property="og:description" content="texnopark">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="/img/og.jpg">
-	<!-- og -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://www.delac.io/wow/css/libs/animate.css" rel="stylesheet">
 </head>
 <body>
 	<div class="loader-wrapper"><div class="loader"></div></div>
@@ -34,20 +18,53 @@
 				<div class="header-inner">
 					<div class="container-holder">
 						<div class="header-top">
-							<div class="container-holder">
-								<form action="" class="form-search mob">
-									<fieldset>
-										<label for="search1">ПОИСК</label>
-										<div class="input-holder">
-											<input id="search1" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+							<div class="header-top-inner">
+								<div class="container-holder">
+									<form action="" class="form-search mob">
+										<fieldset>
+											<label for="search1">ПОИСК</label>
+											<div class="input-holder">
+												<input id="search1" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+											</div>
+											<input type="submit" value="поиск" placeholder="">
+										</fieldset>
+									</form>
+									<div class="header-row">
+										<div class="logo"><a href="#"></a></div>
+										<div class="header-row-info">
+											<div class="header-row-info-col js-header-row-info-col pc">
+												<div class="header-row-info-lng">
+													<span class="lng lng-active">RU</span>
+													<span>ВЫБРАТЬ&nbsp;ЯЗЫК</span>
+												</div>
+												<ul class="drop-menu">
+													<li><a href="#" title="VK">VK</a></li>
+													<li class="active"><a href="#" title="IN">IN</a></li>
+													<li><a href="#" title="FB">FB</a></li>
+												</ul>
+											</div>
+											<div class="header-row-info-col header-col-tel">
+												<div class="header-row-info-tel">
+													<a class="phone" href="tel:+78005555550">8 800 555 55 50</a>
+													<span>НАШИ&nbsp;КОНТАКТЫ</span>
+												</div>
+											</div>
+											<div class="header-row-info-col header-col-login">
+												<a href="#modal-login" class="button button-small btn-login fancy-modal"><i class="i"></i>ВОЙТИ</a>
+											</div>
 										</div>
-										<input type="submit" value="поиск" placeholder="">
-									</fieldset>
-								</form>
-								<div class="header-row">
-									<div class="logo pc"><a href="#"></a></div>
-									<div class="header-row-info">
-										<div class="header-row-info-col js-header-row-info-col">
+										<form action="" class="form-search pc">
+											<fieldset>
+												<label for="search">ПОИСК</label>
+												<div class="input-holder">
+													<input id="search" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+												</div>
+												<input type="submit" value="поиск" placeholder="">
+											</fieldset>
+										</form>
+									</div>
+									<div class="header-row header-row-add">
+										<div class="header-row-info-col js-header-row-info-col mob">
 											<div class="header-row-info-lng">
 												<span class="lng lng-active">RU</span>
 												<span>ВЫБРАТЬ&nbsp;ЯЗЫК</span>
@@ -58,154 +75,147 @@
 												<li><a href="#" title="FB">FB</a></li>
 											</ul>
 										</div>
-										<div class="header-row-info-col header-col-tel">
-											<div class="header-row-info-tel">
-												<a class="phone" href="tel:+78005555550">8 800 555 55 50</a>
-												<span>НАШИ&nbsp;КОНТАКТЫ</span>
+										<div class="media js-media">
+											<span>МЫ В MEDIA</span>
+											<ul class="drop-menu">
+												<li><a href="#" title="VK">VK</a></li>
+												<li class="active"><a href="#" title="IN">IN</a></li>
+												<li><a href="#" title="FB">FB</a></li>
+											</ul>
+										</div>
+										<nav class="nav-main">
+											<ul>
+												<li class="active"><a href="">О технопарке</a></li>
+												<li><a href="">Резидентам</a></li>
+												<li><a href="">Нерезидентам</a></li>
+												<li><a href="">CLASSO</a></li>
+												<li><a href="">Сервисы</a></li>
+												<li><a href="">ЭКО Город</a></li>
+												<li><a href="">B2B Бизнес</a></li>
+												<li><a href="">Программы</a></li>
+												<li><a href="">Партнерам</a></li>
+												<li><a href="">Работа</a></li>
+												<li><a href="">События</a></li>
+												<li><a href="">Контакты</a></li>
+											</ul>
+										</nav>
+										<div class="box-menu">
+											<a href="#" class="button button-small box-menu__btn"><i class="i"></i>МЕНЮ</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-pop-up">
+									<div class="menu-pop-up-inner">
+										<strong class="menu-pop-up__title">МЕНЮ</strong>
+										<div class="container container-menu">
+											<div class="row">
+												<div class="col-2-5">
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">О ТЕХНОПАРКЕ</strong>
+														<ul class="container-menu__list">
+															<li><a href="#">Концепция</a></li>
+															<li><a href="#">Уникальность</a></li>
+															<li><a href="#">CLASSO</a></li>
+															<li><a href="#">ЦОП</a></li>
+															<li><a href="#">Участок под строительство</a></li>
+															<li><a href="#">Технические условия</a></li>
+															<li><a href="#">Инфраструктура</a></li>
+															<li><a href="#">Генплан</a></li>
+															<li><a href="#">Ход строительства</a></li>
+															<li><a href="#">Управляющая Компания</a></li>
+															<li><a href="#">ЭКО-город</a></li>
+															<li><a href="#">Технопарки- партнеры</a></li>
+															<li><a href="#">Программа NGR</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-2-5">
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">Резидентам</strong>
+														<ul class="container-menu__list">
+															<li><a href="">Резидент Технопарка</a></li>
+															<li><a href="">Резидент CLASSO</a></li>
+															<li><a href="">Стать Резидентом</a></li>
+															<li><a href="">Конкурсная комиссия</a></li>
+															<li><a href="">Статус Резидента</a></li>
+															<li><a href="">Услуги </a>
+																<ul class="container-menu__sub-list">
+																	<li><a href="">Консультационные</a></li>
+																	<li><a href="">Консалтинговые</a></li>
+																	<li><a href="">Складские</a></li>
+																	<li><a href="">Финансовые</a></li>
+																	<li><a href="">Страховые</a></li>
+																	<li><a href="">Таможенные</a></li>
+																</ul>
+															</li>
+															<li><a href="">Стать резидентом</a></li>
+															<li><a href="">Соглашение</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-2-5">
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">Нерезидентам</strong>
+														<ul class="container-menu__list">
+															<li><a href="">Услуги</a>
+																<ul class="container-menu__sub-list">
+																	<li><a href="">Консультационные</a></li>
+																	<li><a href="">Консалтинговые</a></li>
+																	<li><a href="">Складские</a></li>
+																	<li><a href="">Финансовые</a></li>
+																	<li><a href="">Страховые</a></li>
+																	<li><a href="">Таможенные</a></li>
+																</ul>
+															</li>
+															<li><a href="">Соглашение</a></li>
+															<li><a href="">Договор</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-2-5">
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">Classo</strong>
+														<ul class="container-menu__list">
+															<li><a href="">Внешняя логистика</a></li>
+															<li><a href="">Склад Грузия</a></li>
+															<li><a href="">Склад Болгария</a></li>
+															<li><a href="">Услуги</a></li>
+															<li><a href="">Заявка на услуги</a></li>
+															<li><a href="">Договора и соглашения</a></li>
+															<li><a href="">Программа CLASSO</a></li>
+															<li><a href="">Подключение к CLASSO</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-2-5 ">
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">Сервисы Future</strong>
+														<ul class="container-menu__list">
+															<li><a href="">«E-20PAY»</a></li>
+															<li><a href="">Народный курьер</a></li>
+															<li><a href="">Народный магазин</a></li>
+															<li><a href="">Народный размер</a></li>
+														</ul>
+													</div>
+													<div class="container-menu-wrapper">
+														<strong class="container-menu__title">Эко город</strong>
+														<ul class="container-menu__list">
+															<li><a href="">Отель</a></li>
+															<li><a href="">Офисы</a></li>
+															<li><a href="">Конференц-зал</a></li>
+															<li><a href="">Рестораны</a></li>
+															<li><a href="">Трансфер</a></li>
+															<li><a href="">Услуги</a></li>
+															<li><a href="">Заявка</a></li>
+															<li><a href="">Соглашение</a></li>
+														</ul>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="header-row-info-col header-col-login">
-											<a href="#modal-login" class="button button-small btn-login fancy-modal"><i class="i"></i>ВОЙТИ</a>
-										</div>
 									</div>
-									<form action="" class="form-search pc">
-										<fieldset>
-											<label for="search">ПОИСК</label>
-											<div class="input-holder">
-												<input id="search" type="search" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
-											</div>
-											<input type="submit" value="поиск" placeholder="">
-										</fieldset>
-									</form>
+									<span class="btn-close-menu">СВЕРНУТЬ МЕНЮ</span>
 								</div>
-								<div class="header-row header-row-add">
-									<div class="logo mob"><a href="#"></a></div>
-									<div class="media js-media">
-										<span>МЫ В MEDIA</span>
-										<ul class="drop-menu">
-											<li><a href="#" title="VK">VK</a></li>
-											<li class="active"><a href="#" title="IN">IN</a></li>
-											<li><a href="#" title="FB">FB</a></li>
-										</ul>
-									</div>
-									<nav class="nav-main">
-										<ul>
-											<li class="active"><a href="">О технопарке</a></li>
-											<li><a href="">Резидентам</a></li>
-											<li><a href="">Нерезидентам</a></li>
-											<li><a href="">CLASSO</a></li>
-											<li><a href="">Сервисы</a></li>
-											<li><a href="">ЭКО Город</a></li>
-											<li><a href="">B2B Бизнес</a></li>
-											<li><a href="">Программы</a></li>
-											<li><a href="">Партнерам</a></li>
-											<li><a href="">Работа</a></li>
-											<li><a href="">События</a></li>
-											<li><a href="">Контакты</a></li>
-										</ul>
-									</nav>
-									<div class="box-menu">
-										<a href="#" class="button button-small box-menu__btn"><i class="i"></i>МЕНЮ</a>
-									</div>
-								</div>
-							</div>
-							<div class="menu-pop-up">
-								<strong class="menu-pop-up__title">МЕНЮ</strong>
-								<div class="container container-menu">
-									<div class="row">
-										<div class="col-2-5">
-											<strong class="container-menu__title">О ТЕХНОПАРКЕ</strong>
-											<ul class="container-menu__list">
-												<li><a href="#">Концепция</a></li>
-												<li><a href="#">Уникальность</a></li>
-												<li><a href="#">CLASSO</a></li>
-												<li><a href="#">ЦОП</a></li>
-												<li><a href="#">Участок под строительство</a></li>
-												<li><a href="#">Технические условия</a></li>
-												<li><a href="#">Инфраструктура</a></li>
-												<li><a href="#">Генплан</a></li>
-												<li><a href="#">Ход строительства</a></li>
-												<li><a href="#">Управляющая Компания</a></li>
-												<li><a href="#">ЭКО-город</a></li>
-												<li><a href="#">Технопарки- партнеры</a></li>
-												<li><a href="#">Программа NGR</a></li>
-											</ul>
-										</div>
-										<div class="col-2-5">
-											<strong class="container-menu__title">Резидентам</strong>
-											<ul class="container-menu__list">
-												<li><a href="">Резидент Технопарка</a></li>
-												<li><a href="">Резидент CLASSO</a></li>
-												<li><a href="">Стать Резидентом</a></li>
-												<li><a href="">Конкурсная комиссия</a></li>
-												<li><a href="">Статус Резидента</a></li>
-												<li><a href="">Услуги </a>
-													<ul class="container-menu__sub-list">
-														<li><a href="">Консультационные</a></li>
-														<li><a href="">Консалтинговые</a></li>
-														<li><a href="">Складские</a></li>
-														<li><a href="">Финансовые</a></li>
-														<li><a href="">Страховые</a></li>
-														<li><a href="">Таможенные</a></li>
-													</ul>
-												</li>
-												<li><a href="">Стать резидентом</a></li>
-												<li><a href="">Соглашение</a></li>
-											</ul>
-										</div>
-										<div class="col-2-5">
-											<strong class="container-menu__title">Нерезидентам</strong>
-											<ul class="container-menu__list">
-												<li><a href="">Услуги</a>
-													<ul class="container-menu__sub-list">
-														<li><a href="">Консультационные</a></li>
-														<li><a href="">Консалтинговые</a></li>
-														<li><a href="">Складские</a></li>
-														<li><a href="">Финансовые</a></li>
-														<li><a href="">Страховые</a></li>
-														<li><a href="">Таможенные</a></li>
-													</ul>
-												</li>
-												<li><a href="">Соглашение</a></li>
-												<li><a href="">Договор</a></li>
-											</ul>
-										</div>
-										<div class="col-2-5">
-											<strong class="container-menu__title">Classo</strong>
-											<ul class="container-menu__list">
-												<li><a href="">Внешняя логистика</a></li>
-												<li><a href="">Склад Грузия</a></li>
-												<li><a href="">Склад Болгария</a></li>
-												<li><a href="">Услуги</a></li>
-												<li><a href="">Заявка на услуги</a></li>
-												<li><a href="">Договора и соглашения</a></li>
-												<li><a href="">Программа CLASSO</a></li>
-												<li><a href="">Подключение к CLASSO</a></li>
-											</ul>
-										</div>
-										<div class="col-2-5">
-											<strong class="container-menu__title">Сервисы Future</strong>
-											<ul class="container-menu__list">
-												<li><a href="">«E-20PAY»</a></li>
-												<li><a href="">Народный курьер</a></li>
-												<li><a href="">Народный магазин</a></li>
-												<li><a href="">Народный размер</a></li>
-											</ul>
-											<strong class="container-menu__title">Эко город</strong>
-											<ul class="container-menu__list">
-												<li><a href="">Отель</a></li>
-												<li><a href="">Офисы</a></li>
-												<li><a href="">Конференц-зал</a></li>
-												<li><a href="">Рестораны</a></li>
-												<li><a href="">Трансфер</a></li>
-												<li><a href="">Услуги</a></li>
-												<li><a href="">Заявка</a></li>
-												<li><a href="">Соглашение</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<span class="btn-close-menu">СВЕРНУТЬ МЕНЮ</span>
 							</div>
 						</div>
 						<section class="container">
@@ -217,7 +227,7 @@
 										Основной центр дохода складов CLASSO - 0,5% с транзакций в интернет-покупках с участием новой платежной системы прямых платежей E-20PAY.</p>
 									<div class="btn-row wow fadeIn" data-wow-delay="0.7s">
 										<a href="#" class="button" title="Подробнее">Подробнее</a>
-										<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
+										<a href="#" class="button" title="Отправить заявку">Отправить заявку</a>
 									</div>
 								</div>
 							</div>
@@ -250,7 +260,7 @@
 							</div>
 							<div class="btn-row wow bounceInRight">
 								<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-								<a href="#" class="button button-blue-dark" title="Отсавить заявку">Отсавить заявку</a>
+								<a href="#" class="button button-blue" title="Отсавить заявку">Отсавить заявку</a>
 							</div>
 						</div>
 					</div>
@@ -258,8 +268,8 @@
 				<div class="container-sea-port-bg wow fadeIn" data-wow-delay="0.7s">
 					<div class="container-sea-port-bg-inner">
 						<video id="sea-port" class="b-lazy" preload="metadata" muted="" loop="" autoplay="autoplay" playsinline="" width="100%" height="100%" poster="images/test-photo/img-3.png" preload="none">
-							<source data-src="video/Port_Georg.mp4" type="video/mp4">
-							<source data-src="video/Port_Georg.webm" type="video/webm">
+							<source data-src="video/port.mp4" type="video/mp4">
+							<source data-src="video/port.webm" type="video/webm">
 						</video>
 					</div>
 				</div>
@@ -281,7 +291,7 @@
 							</div>
 							<div class="btn-row wow bounceInRight animated">
 								<a href="#" class="button button-blue" title="Стандартные сервисы">Стандартные сервисы</a>
-								<a href="#" class="button button-blue-dark" title="Иновационные сервисы">Иновационные сервисы</a>
+								<a href="#" class="button button-blue" title="Иновационные сервисы">Иновационные сервисы</a>
 							</div>
 						</div>
 					</div>
@@ -313,7 +323,7 @@
 								</div>
 								<div class="btn-row  wow bounceInLeft">
 									<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-									<a href="#" class="button button-blue-dark" title="Зарегистрироваться">Зарегистрироваться</a>
+									<a href="#" class="button button-blue" title="Зарегистрироваться">Зарегистрироваться</a>
 								</div>
 							</div>
 						</div>
@@ -365,7 +375,7 @@
 						</div>
 						<div class="btn-row wow bounceInRight">
 							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
 				</div>
@@ -383,7 +393,7 @@
 						</div>
 						<div class="btn-row  wow   bounceInLeft">
 							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
 					<div class="col-6 col-convas   wow bounceInRight">
@@ -649,7 +659,7 @@
 						</div>
 						<div class="btn-row wow bounceInRight">
 							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
 				</div>
@@ -666,7 +676,7 @@
 						</div>
 						<div class="btn-row wow bounceInLeft">
 							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
 					<div class="col-6 col-convas wow bounceInRight">
@@ -717,6 +727,10 @@
 							<p>Технопарк ЭКО Стандарт-GE активно сотрудничает с производителями товаров и услуг из КНР. Такое сотрудничество осуществляется и в вопросах развития информационных услуг для сектора высоких технологий, реализации совместных проектов, направленных на улучшение информационных услуг для инновационных предприятий.</p>
 							<p>Главная цель сотрудничества— распространение китайского и мирового опыта в области создания новых бизнес- форматов, управления, а также привлечение иностранных партнеров к сотрудничеству с Резидентами Технопарка, а также решение вопросов государственного регулирования и поддержки стартапов, решение финансово-экономических вопросов, создание целостных эко-систем поддержки молодых компаний и работа с талантливыми людьми по всему миру.</p>
 						</div>
+						<div class="btn-row  wow bounceInLeft" style="visibility: visible; animation-name: bounceInLeft;">
+							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -732,7 +746,7 @@
 						</div>
 						<div class="btn-row  wow bounceInLeft">
 							<a href="#" class="button button-blue" title="Подробнее">Подробнее</a>
-							<a href="#" class="button button-blue-dark" title="Отправить заявку">Отправить заявку</a>
+							<a href="#" class="button button-blue" title="Отправить заявку">Отправить заявку</a>
 						</div>
 					</div>
 					<div class="col-6 col-convas wow bounceInRight">
@@ -906,7 +920,7 @@
 			</div>
 		</div>
 	</div>
-	<link href="https://www.delac.io/wow/css/libs/animate.css" rel="stylesheet">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 	<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>

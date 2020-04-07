@@ -41,44 +41,25 @@
 	}
 
 	&:focus {
-
+		background: #4963f2;
+		color: #fff;
 	}
-
 	&:hover,
 	&.box-menu__btn-active {
 		background: #4963f2;
 		color: #fff;
-		//box-shadow:  0 5px 0 0 #b0244a;
-		//transform: translate3d(0,-2px,0);
 	}
-
 	&:active{
 		background: #4963f2;
-		//transform: translate3d(0,2px,0);
+		color: #fff;
 	}
-
-	.i{
-		font-size: 14px;
-		float: left;
-		margin: 1px 2px 0 0;
-	}
-
 	&--medium{
 		padding: 11px 20px;
 		font-size: 16px;
-
-		.i{
-			margin-left: 5px;
-		}
 	}
-
 	&--small{
 		padding: 8px 15px;
 		font-size: 14px;
-
-		.i{
-			margin-left: 5px;
-		}
 	}
 }
 
@@ -90,60 +71,32 @@ button::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
-
-.button--outline{
-	border: 1px solid $pink;
-	box-shadow: none;
-	background: transparent;
-	color: $pink;
-	font-weight: normal;
-	text-shadow: none;
-	text-transform: none;
-
-	&:focus {
-		background: $pink;
-		outline: none;
-		transform: none;
-		border-color: $pink;
-		color: #FFF;
-	}
-
-	&:hover{
-		background: $pink;
-		box-shadow: none;
-		transform: none;
-		border-color: $pink;
-		color: #FFF;
-	}
-
-	&:active{
-		background: $pink;
-		border-color: $pink;
-		color: #FFF;
-		box-shadow: none;
-		transform: none;
-	}
-}
-
 .button-small {
 	padding: 0 16px;
 	height: 40px;
 }
-
 .button-blue {
 	background: #4963f2;
 	color: #fff;
-}
 
-.button-blue-dark {
-	background: #374387;
-	color: #fff;
+	&:hover,
+	&:focus,
+	&:active {
+		background: #374387;
+	}
 }
-
 .button-white {
 	background: none;
 	border: 2px solid #fff;
 	color: #fff;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: none;
+		border-color: #2793ca;
+		text-decoration: underline;
+	}
 }
 
 .btn-row {
